@@ -18,7 +18,7 @@ void main() {
   print(jessie is Person);
   print(jessie is Student);
   print(jessie is SchoolBandMember);
-  print(jessie is StudentAthlete);
+  print(jessie is! StudentAthlete);
 }
 
 class Person {
