@@ -1,6 +1,7 @@
 void main() {
   final repository = DataRepository();
   final temperature = repository.fetchTemperature('Manila');
+  print(temperature);
 }
 
 
