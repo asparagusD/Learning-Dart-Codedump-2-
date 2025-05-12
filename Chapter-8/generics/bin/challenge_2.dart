@@ -13,22 +13,22 @@ void main() {
   print(intStack.toString());
 }
 
-class Stack<T> {
+class Stack<E> {
   Stack(this.values);
 
-  List<T> values;
+  List<E> values;
 
-  List<T> push(T value) {
+  List<E> push(E value) {
     values.add(value);
     return values;
   }
 
-  List<T> pop() {
+  List<E> pop() {
     values.removeAt(values.length - 1);
     return values;
   }
 
-  T? peek() {
+  E? peek() {
     if (values.isEmpty) {
       return null;
     } else {
