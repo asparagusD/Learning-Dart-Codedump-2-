@@ -19,6 +19,7 @@ Future<void> main() async {
 
       onDone: () {
         print('All finished');
+        client.close();
       },
     );
   } on Exception catch (error) {
